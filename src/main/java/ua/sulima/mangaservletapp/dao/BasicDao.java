@@ -1,9 +1,10 @@
 package ua.sulima.mangaservletapp.dao;
 
+import lombok.Getter;
+
 import java.util.Optional;
 
-public interface BasicDao <EntityType, ID>
-        extends AutoCloseable{
+public interface BasicDao <EntityType, ID> {
 
     Optional<EntityType> findById(ID id);
 
