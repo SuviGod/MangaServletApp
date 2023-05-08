@@ -1,7 +1,8 @@
-TRUNCATE TABLE mangaapp.manga,
-    mangaapp.creator,
-    mangaapp.user_role,
-    mangaapp.users
+TRUNCATE TABLE mangaservletapp.manga,
+    mangaservletapp.creator,
+    mangaservletapp.user_role,
+    mangaservletapp.users,
+    mangaservletapp.role_users
 RESTART IDENTITY
 ;
 TRUNCATE TABLE mangaapp.manga;
@@ -17,18 +18,24 @@ values ('default', 'noname', 'password');
 
 INSERT INTO mangaapp.creator(name, description) VALUES ('sulima ivan', '');
 
+INSERT INTO mangaapp.creator(name, description) VALUES ('MOCHIZUKI Jun', '');
+
 insert into mangaapp.manga(manga_name, author_id, artist_id, release_year, translator_id, alternative_manga_name, add_datetime, update_datetime, approval_datetime, preview_image_path, is_approved)
-VALUES ('Pandora hearts', 1, 1, 1000, 1, '', now(), now(), now(), 'path', false);
+VALUES ('Pandora hearts', 2, 1, 1000, 1, '', now(), now(), now(), 'path', false);
+
 
 
 insert into mangaapp.user_role(user_id, role_id)
 values (1, 2);
 
-select * from mangaapp.users;
+select * from mangaservletapp.users;
 
 select * from mangaapp.user_role;
 
-select * from mangaapp.manga;
+select * from mangaservletapp.manga;
+select * from manga;
+
+select * from mangaapp.creator;
 
 SELECT r.*
 FROM mangaapp.role r

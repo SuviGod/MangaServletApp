@@ -1,10 +1,10 @@
-package ua.sulima.mangaservletapp.dao.factories.dao;
+package ua.sulima.mangaservletapp.factories.dao;
 
 import lombok.RequiredArgsConstructor;
 import ua.sulima.mangaservletapp.dao.CreatorDao;
 import ua.sulima.mangaservletapp.dao.MangaDao;
 import ua.sulima.mangaservletapp.dao.UserDao;
-import ua.sulima.mangaservletapp.dao.factories.connection.ConnectionFactory;
+import ua.sulima.mangaservletapp.factories.connection.ConnectionFactory;
 import ua.sulima.mangaservletapp.dao.jdbc_impl.CreatorDaoJdbcImpl;
 import ua.sulima.mangaservletapp.dao.jdbc_impl.MangaDaoJdbcImpl;
 import ua.sulima.mangaservletapp.dao.jdbc_impl.UserDaoJdbcImpl;

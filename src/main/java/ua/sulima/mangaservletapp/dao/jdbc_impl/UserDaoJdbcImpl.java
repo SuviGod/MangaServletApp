@@ -1,8 +1,8 @@
 package ua.sulima.mangaservletapp.dao.jdbc_impl;
 
-import org.apache.commons.lang3.ArrayUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.ArrayUtils;
 import ua.sulima.mangaservletapp.dao.UserDao;
 import ua.sulima.mangaservletapp.dao.mapper.RoleMapper;
 import ua.sulima.mangaservletapp.dao.mapper.UserMapper;

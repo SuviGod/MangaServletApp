@@ -16,7 +16,10 @@ public class RoleDaoImpl implements RoleDao {
 
     @Override
     public Short save(Role entity) {
-        return null;
+        em.getTransaction().begin();
+        em.persist(entity);
+        em.getTransaction().commit();
+        return entity.getId();
     }
 
     @Override

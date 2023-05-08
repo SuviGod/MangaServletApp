@@ -1,6 +1,5 @@
 package ua.sulima.mangaservletapp.dao.jdbc_impl;
 
-import org.apache.commons.lang3.ArrayUtils;
 import ua.sulima.mangaservletapp.dao.MangaDao;
 import ua.sulima.mangaservletapp.dao.mapper.MangaMapper;
 import ua.sulima.mangaservletapp.dao.mapper.UserMapper;
